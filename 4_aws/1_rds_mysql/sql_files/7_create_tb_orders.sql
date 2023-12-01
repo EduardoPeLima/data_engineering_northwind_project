@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS Orders
 (
-    OrderID INT NOT NULL PRIMARY KEY,
+    OrderID INT PRIMARY KEY,
     CustomerID INT,
     EmployeeID INT,
     OrderDate DATETIME,

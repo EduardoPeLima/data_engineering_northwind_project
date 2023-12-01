@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS Categories (
-    CategoryID INT NOT NULL PRIMARY KEY,
+    CategoryID INT PRIMARY KEY,
     CategoryName VARCHAR(255),
     Description VARCHAR(255)
 );

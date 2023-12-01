@@ -1,4 +1,5 @@
-CREATE TABLE IF NOT EXISTS Orders(
+CREATE TABLE IF NOT EXISTS Products
+(
     ProductID INT NOT NULL PRIMARY KEY,
     ProductName VARCHAR(255),
     SupplierID INT,

@@ -1,6 +1,0 @@
-CREATE TABLE IF NOT EXISTS Shippers(
-(
-    ShipperID INT NOT NULL PRIMARY KEY,
-    ShipperName VARCHAR(255),
-    Phone VARCHAR(20)
-);

@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS OrderDetails
 (
-    OrderDetailID INT NOT NULL PRIMARY KEY,
+    OrderDetailID INT PRIMARY KEY,
     OrderID INT,
     ProductID INT,
     Quantity INT,

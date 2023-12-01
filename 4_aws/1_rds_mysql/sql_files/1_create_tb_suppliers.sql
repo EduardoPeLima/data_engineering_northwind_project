@@ -1,6 +1,6 @@
-CREATE TABLE IF NOT EXISTS Suppliers(
+CREATE TABLE IF NOT EXISTS Suppliers
 (
-    SupplierID INT NOT NULL PRIMARY KEY,
+    SupplierID INT PRIMARY KEY,
     SupplierName VARCHAR(255),
     ContactName VARCHAR(255),
     Address VARCHAR(255),
