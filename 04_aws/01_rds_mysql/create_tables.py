@@ -36,6 +36,6 @@ def execute_sql_files_in_directory(directory_path):
     finally:
         connection.close()
 
-sql_directory = r'04_aws\1_rds_mysql\sql_files'
+sql_directory = r'04_aws\01_rds_mysql\sql_files'
 
 execute_sql_files_in_directory(sql_directory)

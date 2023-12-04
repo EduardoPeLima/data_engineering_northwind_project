@@ -7,5 +7,7 @@ CREATE TABLE IF NOT EXISTS Suppliers
     City VARCHAR(255),
     PostalCode VARCHAR(20),
     Country VARCHAR(255),
-    Phone VARCHAR(20)
+    Phone VARCHAR(20),
+    dt_extract_data DATETIME,
+    na_file_name VARCHAR(80)
 );

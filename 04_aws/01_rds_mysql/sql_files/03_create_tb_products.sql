@@ -7,5 +7,7 @@ CREATE TABLE IF NOT EXISTS Products
     Unit VARCHAR(255),
     Price DECIMAL(10, 2) DEFAULT 0,
     FOREIGN KEY (CategoryID) REFERENCES Categories (CategoryID),
-    FOREIGN KEY (SupplierID) REFERENCES Suppliers (SupplierID)
+    FOREIGN KEY (SupplierID) REFERENCES Suppliers (SupplierID),
+    dt_extract_data DATETIME,
+    na_file_name VARCHAR(80)
 );

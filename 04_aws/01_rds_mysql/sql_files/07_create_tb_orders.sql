@@ -7,5 +7,7 @@ CREATE TABLE IF NOT EXISTS Orders
     ShipperID INT,
     FOREIGN KEY (EmployeeID) REFERENCES Employees (EmployeeID),
     FOREIGN KEY (CustomerID) REFERENCES Customers (CustomerID),
-    FOREIGN KEY (ShipperID) REFERENCES Shippers (ShipperID)
+    FOREIGN KEY (ShipperID) REFERENCES Shippers (ShipperID),
+    dt_extract_data DATETIME,
+    na_file_name VARCHAR(80)
 );

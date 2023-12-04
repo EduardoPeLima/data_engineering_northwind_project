@@ -6,5 +6,7 @@ CREATE TABLE IF NOT EXISTS Customers
     Address VARCHAR(255),
     City VARCHAR(255),
     PostalCode VARCHAR(20),
-    Country VARCHAR(255)
+    Country VARCHAR(255),
+    dt_extract_data DATETIME,
+    na_file_name VARCHAR(80)
 );
