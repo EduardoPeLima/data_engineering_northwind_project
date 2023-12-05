@@ -3,8 +3,8 @@ import os
 from datetime import datetime
 import time
 
-ACCESS_KEY = os.getenv('AWS_ACCESS_KEY')
-SECRET_KEY = os.getenv('AWS_SECRET_KEY')
+ACCESS_KEY = os.getenv('AWS_ACCESS_KEY_CODE')
+SECRET_KEY = os.getenv('AWS_SECRET_KEY_CODE')
 BUCKET_NAME = os.getenv('AWS_BUCKET_NAME')
 
 def get_s3_client():

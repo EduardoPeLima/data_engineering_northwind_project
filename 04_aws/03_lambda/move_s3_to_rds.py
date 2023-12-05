@@ -22,6 +22,8 @@ def lambda_handler(event, context):
     
     for record in event['Records']:
         key = record['s3']['object']['key']
+    
+    print('Starting insert data from file: ' + key)
         
     connection = mysql.connector.connect(**db_config)
     
