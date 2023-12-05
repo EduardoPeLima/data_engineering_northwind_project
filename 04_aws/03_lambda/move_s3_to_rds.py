@@ -5,8 +5,8 @@ import mysql.connector
 import re
 from datetime import datetime
 
-ACCESS_KEY = os.getenv('AWS_ACCESS_KEY')
-SECRET_KEY = os.getenv('AWS_SECRET_KEY')
+ACCESS_KEY = os.getenv('AWS_ACCESS_KEY_CODE')
+SECRET_KEY = os.getenv('AWS_SECRET_KEY_CODE')
 BUCKET_NAME = os.getenv('AWS_BUCKET_NAME')
 
 db_config = {
