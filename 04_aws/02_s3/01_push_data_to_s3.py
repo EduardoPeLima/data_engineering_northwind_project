@@ -43,7 +43,7 @@ def send_folder_data_to_s3(s3_client, BUCKET_NAME, folder_path):
         file_name = (file.replace('.csv','')).lower()
         s3_client.upload_file(file_path, BUCKET_NAME, f'{file_name}_{current_date}_{current_hour}.csv')
         print(f'{file} uploaded to S3')
-        time.sleep(30)
+        time.sleep(10)
     
     print('All files were uploaded to S3')
 

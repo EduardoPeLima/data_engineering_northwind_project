@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS OrderDetails
+CREATE TABLE IF NOT EXISTS Orderdetails
 (
     OrderDetailID INT PRIMARY KEY,
     OrderID INT,

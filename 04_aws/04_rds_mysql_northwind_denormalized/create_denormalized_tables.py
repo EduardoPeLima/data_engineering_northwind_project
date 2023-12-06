@@ -7,7 +7,7 @@ db_config = {
     'host': os.environ['rds_host'],
     'user': os.environ['rds_user'],
     'password': os.environ['rds_password'],
-    'database': os.environ['rds_database']
+    'database': os.environ['rds_denormalized_database']
 }
 
 def execute_sql_file(cursor, file_path):
@@ -36,6 +36,6 @@ def execute_sql_files_in_directory(directory_path):
     finally:
         connection.close()
 
-sql_directory = r'04_aws\01_rds_mysql\sql_files'
+sql_directory = r'04_aws\04_rds_mysql_northwind_denormalized\sql_files'
 
 execute_sql_files_in_directory(sql_directory)
