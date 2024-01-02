@@ -3,7 +3,7 @@
 *This is a project using data from a fictional company called Northwind, involved in product shipping operations.
   
 ## Transactional Modeling vs Dimensional Modeling
-* The original data is fully normalized, making it ideal for transactional databases where various CRUD operations occur constantly due to the interaction of various users using the application.
+* The original data is fully normalized, making it ideal for OLTP (Online Transaction Processing) systems where various CRUD operations occur constantly due to the interaction of various users using the application.
 
   <i>CRUD operations are: Create, Read, Update and Delete</i>
   
@@ -11,7 +11,7 @@
 
 #### Our goal is to develop an analytical layer for this data, so the transactional data is not the best approach for our case. 
 * Normalizing data, besides being more complex for non-technical individuals, presents a poorer performance from an analytical perspective due to the large number of table cross-references (JOINS) needed to obtain answers. For example, for a question like "which product categories have certain customers ordered?" you would need to cross-reference 5 tables: categories, products, order_details, orders and customers, making it a non-performant operation and affecting the transactional database's performance.
-* Therefore, we will develop a dimensional model based on transactional data. The goal here is to create a "fact" table where we record occurrences of a specific real-world event and dimension tables that allow us to "slice" the fact table directly.
+* Consequently, we plan to construct a dimensional model based on transactional data. The objective is to create an OLAP (Online Analytical Processing) system, incorporating a "fact" table to record occurrences of specific real-world events and dimension tables that facilitate direct "slicing" of the fact table.
   
 <img alt="Northwind dimensional schema" src="https://github.com/EduardoPeLima/data_engineering_northwind_project/blob/master/04_aws/04_rds_mysql_northwind_denormalized/project_northwind_dimensional_model.png">
 
